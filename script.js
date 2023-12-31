@@ -89,3 +89,13 @@ let score = JSON.parse(localStorage.getItem('scores'))
       // console.log(computerMove);
       return computerMove;
     }
+
+    const btnElement = document.querySelector('.auto-play');
+    
+    function changed() { 
+      if (btnElement.innerHTML ==="Auto Play"){
+        btnElement.innerHTML = "Stop";
+      }else{
+        btnElement.innerHTML = "Auto Play";
+      }
+     }
